@@ -218,9 +218,13 @@ body {
 .btn-ghost {
   background: transparent;
   border: 1px solid rgba(18, 18, 18, 0.06);
-  color: #111
+  color: #303030e8
 }
 
+.btn-ghost:hover {
+  transform: translateY(-3px);
+  filter: brightness(.98)
+}
 .btn-outline {
   background: transparent;
   border: 1px solid rgba(18, 18, 18, 0.08);
@@ -674,4 +678,37 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.5)
 .modal-close:hover {
   color: #000;
   transform: scale(1.2);
+}
+/* Venue grid layout */
+.venue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.venue-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.venue-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Titles */
+.venue-card .small-title {
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Center styling (for section intro) */
+.center {
+  text-align: center;
 }
