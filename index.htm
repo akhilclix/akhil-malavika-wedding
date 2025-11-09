@@ -49,7 +49,7 @@
           <p class="lead">Akhil & Malavika — together with our families.</p>
           <div class="meta">
             <div class="date">January 1, 2026</div>
-            <div class="time">Ceremony: 11:00 AM</div>
+            <div class="time">Wedding: 12:10 AM - 12:25 AM</div>
           </div>
 
           <div id="countdown" class="countdown" data-target="2026-01-01T11:00:00+05:30" aria-live="polite"></div>
@@ -161,6 +161,10 @@
 <div id="wishesModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="wishesTitle">
   <div class="modal-backdrop" id="backdrop"></div>
   <div class="modal-content" role="document">
+    
+    <!-- ✨ X Close Button -->
+    <button id="closeWishesBtn" class="modal-close" aria-label="Close">&times;</button>
+
     <h2 id="wishesTitle">Send your wishes 🌟</h2>
     <p class="hint">Click any wish below — we’ll celebrate with you!</p>
 
@@ -177,13 +181,10 @@
       🎉 Thank you for your wishes!
     </div>
 
-    <div class="modal-actions">
-      <button id="closeWishesBtn" class="btn btn-outline">Close</button>
-    </div>
-
     <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
   </div>
 </div>
+
 
 <!-- Include the popup script -->
 <script src="wishes-popup.js"></script>

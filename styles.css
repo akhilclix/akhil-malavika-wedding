@@ -654,3 +654,24 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.5)
 @media (max-width:420px){
   .wishes-grid { grid-template-columns: repeat(1,1fr); }
 }
+
+/* X Close Button */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #555;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #000;
+  transform: scale(1.2);
+}
