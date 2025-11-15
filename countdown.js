@@ -126,7 +126,7 @@ function openLightbox(src){
     position: 'fixed', // still fixed so it stays at the corner
     top: '18px',
     right: '18px',
-    fontSize: '20px',
+    fontSize: '30px',
     color: '#fff',
     background: 'transparent',
     border: 'none',
