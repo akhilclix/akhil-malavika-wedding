@@ -656,14 +656,14 @@ body {
   .wishes-grid { grid-template-columns: repeat(1,1fr); }
 }
 
-/* X Close Button */
+/* X  e Button */
 .modal-close {
   position: absolute;
   top: 10px;
   right: 14px;
   background: transparent;
   border: none;
-  font-size: 1.8rem;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1;
   color: #555;
