@@ -50,28 +50,62 @@
     }
   }
 
-  // --- Lightbox ---
   function openLightbox(src){
-    const overlay = document.createElement('div');
-    overlay.style.position='fixed';
-    overlay.style.inset='0';
-    overlay.style.background='rgba(0,0,0,0.88)';
-    overlay.style.display='flex';
-    overlay.style.alignItems='center';
-    overlay.style.justifyContent='center';
-    overlay.style.zIndex=9999;
-    overlay.style.cursor='zoom-out';
+  const overlay = document.createElement('div');
+  overlay.style.position='fixed';
+  overlay.style.inset='0';
+  overlay.style.background='rgba(0,0,0,0.88)';
+  overlay.style.display='flex';
+  overlay.style.alignItems='center';
+  overlay.style.justifyContent='center';
+  overlay.style.zIndex=9999;
+  overlay.style.cursor='zoom-out';
 
-    const img = document.createElement('img');
-    img.src = src;
-    img.style.maxWidth = '92%';
-    img.style.maxHeight = '92%';
-    img.style.borderRadius = '12px';
-    img.style.boxShadow = '0 30px 90px rgba(0,0,0,0.6)';
-    overlay.appendChild(img);
-    overlay.addEventListener('click', ()=> overlay.remove());
-    document.body.appendChild(overlay);
-  }
+  // --- Close Button ---
+  const closeBtn = document.createElement('div');
+  closeBtn.innerHTML = '&times;';
+  closeBtn.style.position = 'absolute';
+  closeBtn.style.top = '20px';
+  closeBtn.style.right = '30px';
+  closeBtn.style.fontSize = '40px';
+  closeBtn.style.color = 'white';
+  closeBtn.style.cursor = 'pointer';
+  closeBtn.style.zIndex = '10000';
+  closeBtn.style.fontWeight = '300';
+  closeBtn.style.userSelect = 'none';
+  closeBtn.addEventListener('click', (e)=>{
+    e.stopPropagation(); // prevent overlay click
+    overlay.remove();
+  });
+
+  const img = document.createElement('img');
+  img.src = src;
+  img.style.maxWidth = '92%';
+  img.style.maxHeight = '92%';
+  img.style.borderRadius = '12px';
+  img.style.boxShadow = '0 30px 90px rgba(0,0,0,0.6)';
+
+  let scale = 1;
+
+overlay.addEventListener('wheel', (e)=>{
+  e.preventDefault();
+  scale += e.deltaY * -0.002;
+  scale = Math.min(Math.max(1, scale), 4); // limits 1x – 4x
+  img.style.transform = `scale(${scale})`;
+});
+
+  
+  // Prevent closing when clicking on the image
+  img.addEventListener('click', e => e.stopPropagation());
+
+  overlay.appendChild(img);
+  overlay.appendChild(closeBtn);
+
+  // Clicking on overlay closes
+  overlay.addEventListener('click', ()=> overlay.remove());
+
+  document.body.appendChild(overlay);
+}
 
   // --- Scroll reveal (simple) ---
   function initReveal(){
