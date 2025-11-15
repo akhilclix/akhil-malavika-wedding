@@ -38,7 +38,7 @@
   function initGallery(){
     const g = document.getElementById('gallery');
     if(!g) return;
-    const count = 8; // change if you have more/less
+    const count = 6;
     for(let i=1;i<=count;i++){
       const img = document.createElement('img');
       img.src = `images/photo${i}.jpg`;
