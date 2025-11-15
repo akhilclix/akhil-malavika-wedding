@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" width="120" height="160" role="img" aria-label="Traditional lamp">
+  <g fill="none" stroke="none">
+    <ellipse cx="60" cy="146" rx="44" ry="8" fill="#6b4c1b"></ellipse>
+    <rect x="46" y="110" width="28" height="36" rx="6" fill="#b8862a"></rect>
+    <path d="M20 95 C40 70, 80 70, 100 95 L100 100 C80 85, 40 85, 20 100 Z" fill="#f3d999"></path>
+    <path d="M60 40 C72 40,78 48,78 60 C78 72,68 76,60 76 C52 76,42 72,42 60 C42 48,48 40,60 40 Z" fill="#ffefb7"></path>
+    <path d="M60 30 L54 44 L66 44 Z" fill="#ffcf5c"></path>
+    <circle cx="60" cy="36" r="2" fill="#ffd27a"></circle>
+  </g>
+</svg>

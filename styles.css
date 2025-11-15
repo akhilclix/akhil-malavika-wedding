@@ -20,8 +20,6 @@ body::after {
   z-index: -1;
 }
 
-
-
 /* styles.css — modern, elegant, animated */
 :root {
   --bg: #fbfaf9;
@@ -511,8 +509,7 @@ body {
 .card-card {
   position: relative;
   /* border: 2px solid rgba(255, 212, 70, 0.877); */
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.5));
-
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.5));
 }
 
 .gallery img {
@@ -711,4 +708,131 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.5)
 /* Center styling (for section intro) */
 .center {
   text-align: center;
+}
+
+/* Timeline container */
+.event-details-section {
+  padding: 18px 16px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Timeline list */
+.timeline {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  position: relative;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 28px;               /* position of the line */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(#f0f0f0, #eee);
+  border-radius: 2px;
+}
+
+/* Item */
+.timeline-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 10px;
+  position: relative;
+  margin-left: 8px;
+}
+
+/* Make sure icons sit on the line */
+.timeline-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(12, 18, 30, 0.06);
+  border: 1px solid #eee;
+  position: relative;
+  z-index: 2;
+  margin-left: 0;
+  transform-origin: center;
+  animation: icon-bounce 2.4s ease-in-out infinite;
+}
+
+/* Content area */
+.timeline-content {
+  background: transparent;
+  padding: 2px 6px;
+  flex: 1;
+}
+
+/* Head row (title + small meta) */
+.timeline-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.timeline-head strong {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.timeline-time {
+  font-size: 0.92rem;
+  color: #666;
+}
+
+/* muted small paragraph style */
+.muted.small, .muted.small code {
+  font-size: 0.92rem;
+  color: #777;
+  margin: 0;
+}
+
+/* Separation: small divider between items on wide screens */
+.timeline-item + .timeline-item {
+  margin-top: 6px;
+}
+
+/* Fade-up animation initial state */
+.fade-up {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: transform 420ms cubic-bezier(.22,.9,.38,1), opacity 420ms ease;
+}
+
+/* When in view */
+.fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* icon bounce (subtle) */
+@keyframes icon-bounce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-6px) scale(1.02); }
+  60% { transform: translateY(-3px) scale(1.01); }
+}
+
+/* Hover/focus highlight for better accessibility */
+.timeline-item:hover .timeline-icon,
+.timeline-item:focus-within .timeline-icon {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(12, 18, 30, 0.08);
+}
+
+/* Small screens: adjust positions */
+@media (max-width: 600px) {
+  .timeline::before { left: 20px; }
+  .timeline-item { gap: 10px; padding: 12px 6px; }
+  .timeline-icon { width: 40px; height: 40px; font-size: 1.1rem; }
 }

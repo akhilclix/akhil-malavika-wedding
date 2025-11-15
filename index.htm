@@ -72,26 +72,83 @@
       </div>
     </header>
 
-    <!-- Invitation text -->
-    <section class="section container reveal">
-      <div class="grid-2">
-        <div>
-          <h2 class="section-title">Our Story</h2>
-          <p class="text">We would be honored to have you with us as we start this next chapter. Please join for the
-            ceremony followed by a reception of food, music and joy.</p>
-        </div>
-        <div>
-          <h3 class="small-title">Event details</h3>
-          <ul class="info-list">
-            <li><strong>Wedding:</strong> Thathodam Farms and Resort , Kollam</li>
-            <li><strong>Dress code:</strong> Traditional</li>
-            <li><strong>Reception:</strong> Bhavana Auditorium,Chempoor, Trivandrum</li>
-            <li><strong>Dress code:</strong> Semi-formal</li>
-            <li><strong>Reception Date:</strong> January 02, 2026 | 04:00 PM</li>
-          </ul>
-        </div>
-      </div>
+   <section class="section container reveal">
+  <div class="grid-2">
+    <!-- STORY -->
+    <div>
+      <h2 class="section-title">Our Story</h2>
+      <p class="text">
+       We met at work and soon realised we shared the same taste for good food, 
+       long walks and countless late-night conversations. Over time, those small
+        moments became our favourite memories and now we can't wait to celebrate the next chapter with you
+      </p>
+
+      <p class="text" style="margin-top:10px;">
+        Please join us for the ceremony and receptions — your presence will make our day complete.
+      </p>
+    </div>
+
+    <!-- EVENT DETAILS (timeline; no map buttons) -->
+    <section aria-labelledby="event-details" class="event-details-section">
+      <h3 id="event-details" class="small-title">✨ Event Details</h3>
+
+      <ul class="timeline" role="list">
+        <li class="timeline-item fade-up">
+          <div class="timeline-icon" aria-hidden="true">💍</div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <strong>Wedding</strong>
+              <time datetime="2026-01-01" class="timeline-time"> January 01, 2026 • Thathodam Farms and Resort, Kollam</time>
+            </div>
+            <p class="muted small">Outdoor ceremony. parking available at the resort.</p>
+          </div>
+        </li>
+
+        <li class="timeline-item fade-up">
+          <div class="timeline-icon" aria-hidden="true">🌸</div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <strong>Bride’s Reception</strong>
+              <time datetime="2026-12-31T15:00" class="timeline-time"> December 31, 2026 • 03:00 PM – 08:00 PM</time>
+            </div>
+            <p class="muted small">Venue: Bride's Home, Velamkonam, Keralapuram, Kollam.</p>
+          </div>
+        </li>
+
+        <li class="timeline-item fade-up">
+          <div class="timeline-icon" aria-hidden="true">🎉</div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <strong>Groom’s Reception</strong>
+              <time datetime="2026-01-02T15:00" class="timeline-time">January 02, 2026 • 03:00 PM – 08:00 PM</time>
+            </div>
+            <p class="muted small">Venue: Bhavana Auditorium, Chempoor, Trivandrum.</p>
+          </div>
+        </li>
+
+        <li class="timeline-item fade-up">
+          <div class="timeline-icon" aria-hidden="true">👗</div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <strong>Dress Code (Wedding)</strong>
+              <span class="timeline-time">Traditional</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item fade-up">
+          <div class="timeline-icon" aria-hidden="true">🕺</div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <strong>Dress Code (Receptions)</strong>
+              <span class="timeline-time"> Semi-formal</span>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
+  </div>
+</section>
 
     <!-- RSVP (Google Form embed) -->
     <!-- <section id="rsvp" class="section pale reveal">
@@ -117,56 +174,74 @@
     </section>
 
     <!-- Venue -->
-    <section id="venue" class="section pale reveal visible">
-      <div class="container">
-        <h2 class="section-title center">Venue & Directions</h2>
-        <p class="center small muted">Join us as we celebrate love and togetherness — at two beautiful venues.</p>
+<section id="venue" class="section pale reveal visible">
+  <div class="container">
+    <h2 class="section-title center">Venue & Directions</h2>
+    <p class="center small muted">Join us as we celebrate love and togetherness — at two beautiful venues.</p>
 
-        <div class="venue-grid">
-          <!-- Wedding Venue -->
-          <div class="venue-card">
-            <h3 class="small-title">💍 Wedding Ceremony</h3>
-            <p class="text">
-              <strong>Thathodam Farms and Resort</strong><br>
-              Kanjavelli, Perinad, Anjalumoodu, Kollam
-            </p>
-            <p class="text small muted">Outdoor ceremony; parking available at the resort.</p>
+    <div class="venue-grid">
+      <!-- Wedding Venue -->
+      <div class="venue-card">
+        <h3 class="small-title">💍 Wedding Ceremony</h3>
+        <p class="text">
+          <strong>Thathodam Farms and Resort</strong><br>
+          Kanjavelli, Perinad, Anjalumoodu, Kollam
+        </p>
+        <p class="text small muted">Outdoor ceremony. parking available at the resort.</p>
 
-            <div class="map-cta">
-              <a class="btn btn-outline" href="https://www.google.com/maps?q=Thathodam+Farms+Resort+near+ashtamudi+lake"
-                target="_blank" rel="noopener">
-                📍 Open in Google Maps
-              </a>
-            </div>
-
-            <iframe src="https://www.google.com/maps?q=Thathodam+Farms+Resort+near+ashtamudi+lake&output=embed"
-              width="100%" height="260" style="border:0;border-radius:12px;margin-top:10px" allowfullscreen=""
-              loading="lazy" title="Wedding Venue Map"></iframe>
-          </div>
-
-          <!-- Groom's Reception -->
-          <div class="venue-card">
-            <h3 class="small-title">🎉 Groom’s Reception</h3>
-            <p class="text">
-              <strong>Bhavana Auditorium</strong><br>
-              Chempoor, Trivandrum
-            </p>
-            <p class="text small muted">Evening celebration with food, music, and joy.</p>
-
-            <div class="map-cta">
-              <a class="btn btn-outline" href="https://www.google.com/maps?q=Bhavana+Auditorium,+Chempoor,+Trivandrum"
-                target="_blank" rel="noopener">
-                📍 Open in Google Maps
-              </a>
-            </div>
-
-            <iframe src="https://www.google.com/maps?q=Bhavana+Auditorium,+Chempoor,+Trivandrum&output=embed"
-              width="100%" height="260" style="border:0;border-radius:12px;margin-top:10px" allowfullscreen=""
-              loading="lazy" title="Reception Venue Map"></iframe>
-          </div>
+        <div class="map-cta">
+          <a class="btn btn-outline" href="https://www.google.com/maps?q=Thathodam+Farms+Resort+near+ashtamudi+lake"
+            target="_blank" rel="noopener">
+            📍 Open in Google Maps
+          </a>
         </div>
+
+        <iframe src="https://www.google.com/maps?q=Thathodam+Farms+Resort+near+ashtamudi+lake&output=embed"
+          width="100%" height="260" style="border:0;border-radius:12px;margin-top:10px" allowfullscreen="" loading="lazy" title="Wedding Venue Map"></iframe>
       </div>
-    </section>
+
+      <!-- Groom's Reception -->
+      <div class="venue-card">
+        <h3 class="small-title">🎉 Groom’s Reception</h3>
+        <p class="text">
+          <strong>Bhavana Auditorium</strong><br>
+          Chempoor, Trivandrum
+        </p>
+        <p class="text small muted">Evening celebration with food, music, and joy.</p>
+
+        <div class="map-cta">
+          <a class="btn btn-outline" href="https://www.google.com/maps?q=Bhavana+Auditorium,+Chempoor,+Trivandrum"
+            target="_blank" rel="noopener">
+            📍 Open in Google Maps
+          </a>
+        </div>
+
+        <iframe src="https://www.google.com/maps?q=Bhavana+Auditorium,+Chempoor,+Trivandrum&output=embed"
+          width="100%" height="260" style="border:0;border-radius:12px;margin-top:10px" allowfullscreen="" loading="lazy" title="Reception Venue Map"></iframe>
+      </div>
+
+      <!-- Bride's Reception -->
+      <div class="venue-card">
+        <h3 class="small-title">🎉 Bride’s Reception</h3>
+        <p class="text">
+          <strong>Bride's Home</strong><br>
+          Vinayakam, Velamkonam, Keralapuram, Perumpuzha, Kollam
+        </p>
+        <p class="text small muted">Evening celebration with food, music, and joy.</p>
+
+        <div class="map-cta">
+          <a class="btn btn-outline" href="https://www.google.com/maps?q=8.931361,76.658944" target="_blank" rel="noopener">
+            📍 Open in Google Maps
+          </a>
+        </div>
+
+        <iframe src="https://www.google.com/maps?q=8.931361,76.658944&output=embed"
+          width="100%" height="260" style="border:0;border-radius:12px;margin-top:10px" allowfullscreen="" loading="lazy" title="Bride Reception Map"></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
     <!-- Footer -->
@@ -184,7 +259,7 @@
   <script src="countdown.js"></script>
 
   <!-- Wishes Popup -->
-  <button id="openWishesBtn" class="btn btn-primary openWishesBtn"
+  <button id="openWishesBtn" class="btn btn-primary openWishesBtn floating-wish-btn"
     style="position: fixed; bottom: 30px; right: 30px; z-index: 999;">
     ✨ Send Wishes
   </button>

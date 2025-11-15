@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" width="80" height="112" role="img" aria-label="Paisley motif">
+  <g fill="#ffd9b3" stroke="#b36b1f" stroke-width="1.4">
+    <path d="M50 5 C75 5,95 25,95 50 C95 95,55 120,50 135 C45 120,5 95,5 50 C5 25,25 5,50 5 Z"></path>
+    <circle cx="62" cy="48" r="6" fill="#fff4e6"></circle>
+  </g>
+</svg>

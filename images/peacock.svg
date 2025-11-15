@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" width="120" height="60" role="img" aria-label="Peacock feather accent">
+  <g stroke="#0b4f6c" fill="none" stroke-width="2">
+    <path d="M10 50 C30 20, 60 10, 90 18"></path>
+    <path d="M30 40 C45 30, 70 28, 86 34" stroke="#0b6b7a"></path>
+    <circle cx="86" cy="34" r="6" fill="#0b6b7a"></circle>
+  </g>
+</svg>

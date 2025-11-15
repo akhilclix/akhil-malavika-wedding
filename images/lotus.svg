@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" width="100" height="80" role="img" aria-label="Lotus motif">
+  <g fill="#ffddc1" stroke="#c57f2b" stroke-width="1.5">
+    <path d="M50 70 C30 70, 8 50, 20 32 C32 14, 50 6, 50 6 C50 6, 68 14, 80 32 C92 50, 70 70, 50 70 Z"></path>
+    <path d="M50 66 C45 55, 50 44, 50 36 C50 44,55 55,50 66 Z" fill="#fff2e6"></path>
+  </g>
+</svg>

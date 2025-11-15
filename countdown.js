@@ -227,3 +227,27 @@ function openLightbox(src){
       });
     });
   });
+
+  
+
+  // Fade items into view using IntersectionObserver
+(function () {
+  const items = document.querySelectorAll('.fade-up');
+
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          // if you prefer one-time reveal, unobserve:
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    items.forEach(i => obs.observe(i));
+  } else {
+    // fallback: reveal all
+    items.forEach(i => i.classList.add('in-view'));
+  }
+})();

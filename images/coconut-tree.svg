@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120" role="img" aria-label="Coconut tree">
+  <g fill="#2b8a3e">
+    <path d="M40 18 C58 18,70 30,70 50 C70 60,66 70,60 78 C58 80,54 90,42 96 C30 90,26 80,24 78 C18 70,14 60,14 50 C14 30,26 18,40 18 Z"></path>
+    <rect x="36" y="30" width="8" height="90" rx="3" fill="#6b4c1b"></rect>
+  </g>
+</svg>
