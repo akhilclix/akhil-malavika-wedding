@@ -858,8 +858,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    background-attachment: fixed;
-    background-position: center 15%;
+  body::before {
+    background-position: center 12%;
   }
 }
+
