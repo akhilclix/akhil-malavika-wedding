@@ -837,14 +837,6 @@ body {
   .timeline-icon { width: 40px; height: 40px; font-size: 1.1rem; }
 }
 
-.countdown > div {
-  transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.countdown > div:hover {
-  transform: translateY(-6px) scale(1.05);
-  box-shadow: 0 18px 40px rgba(212,175,55,0.25);
-}
 
 
 
