@@ -884,3 +884,43 @@ body {
   }
 }
 
+/* Floating Wishes Button — Stable Fix */
+.floating-wish-wrapper {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  pointer-events: auto;
+}
+
+.floating-wish-btn {
+  will-change: transform;
+  transform: translateZ(0); /* GPU lock */
+  backface-visibility: hidden;
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.floating-wish-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+
+.gold-float {
+  pointer-events: none;
+  will-change: transform;
+  transform: translateZ(0);
+}
+@media (max-width: 768px) {
+  .floating-wish-wrapper {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .floating-wish-btn {
+    font-size: 0.95rem;
+    padding: 0.55rem 0.9rem;
+  }
+}
